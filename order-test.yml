@@ -17,7 +17,7 @@ server:
   port: 8081
   
 env:
-  test6
+  test10
 girl:
   name: lucy
   age: 11
