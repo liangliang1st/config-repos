@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    product:
+      path: /myProduct/**
+      serviecId: product
+#      设置敏感头的设定，cookie等
+      sensitiveHeaders: 
+#management:
+#  security:
+#    enabled: false
