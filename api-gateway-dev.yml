@@ -12,3 +12,5 @@ zuul:
 #    - /myProduct/product/listForOrder
 #    - /product/product/listForOrder
     - /**/product/listForOrder
+  #全部服务忽略敏感头（全部服务都可以传cookie）
+  sensitive-headers:   
