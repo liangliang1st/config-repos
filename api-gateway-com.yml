@@ -1,0 +1,16 @@
+zuul:
+  routes:
+#    随便定义
+#    myProduct:
+#      path: /myProduct/**
+#      #注册名
+#      serviceId: product
+  #简洁写法
+      product: /myProduct/**
+  #禁止服务被访问
+  ignored-patterns:
+#    - /myProduct/product/listForOrder
+#    - /product/product/listForOrder
+    - /**/product/listForOrder
+  #全部服务忽略敏感头（全部服务都可以传cookie）
+  sensitive-headers:   
